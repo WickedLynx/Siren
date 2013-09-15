@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59CBD76E17E5D7A000FF1FA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CBD76D17E5D7A000FF1FA9 /* Foundation.framework */; };
+		59CBD77A17E5D7A000FF1FA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBD77917E5D7A000FF1FA9 /* main.m */; };
+		59CBD78317E5DA8C00FF1FA9 /* SRDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBD78217E5DA8C00FF1FA9 /* SRDHelper.m */; };
+		59CBD78717E5DE3300FF1FA9 /* Celestial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CBD78617E5DE3300FF1FA9 /* Celestial.framework */; };
+		59CBD78D17E61C3E00FF1FA9 /* SRDAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBD78C17E61C3E00FF1FA9 /* SRDAlarm.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		59CBD76A17E5D7A000FF1FA9 /* sirend */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sirend; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CBD76D17E5D7A000FF1FA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		59CBD77217E5D7A000FF1FA9 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		59CBD77317E5D7A000FF1FA9 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		59CBD77517E5D7A000FF1FA9 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		59CBD77817E5D7A000FF1FA9 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		59CBD77917E5D7A000FF1FA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		59CBD77B17E5D7A000FF1FA9 /* sirend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sirend-Prefix.pch"; sourceTree = "<group>"; };
+		59CBD78117E5DA8C00FF1FA9 /* SRDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDHelper.h; sourceTree = "<group>"; };
+		59CBD78217E5DA8C00FF1FA9 /* SRDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDHelper.m; sourceTree = "<group>"; };
+		59CBD78617E5DE3300FF1FA9 /* Celestial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Celestial.framework; path = System/Library/PrivateFrameworks/Celestial.framework; sourceTree = SDKROOT; };
+		59CBD78917E5F15300FF1FA9 /* NSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		59CBD78B17E61C3E00FF1FA9 /* SRDAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDAlarm.h; sourceTree = "<group>"; };
+		59CBD78C17E61C3E00FF1FA9 /* SRDAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDAlarm.m; sourceTree = "<group>"; };
+		59CBD78F17E622E500FF1FA9 /* com.lbs.sirend.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.lbs.sirend.plist; sourceTree = "<group>"; };
+		59CBD79017E622E500FF1FA9 /* reloadsirend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reloadsirend; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59CBD76717E5D7A000FF1FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CBD78717E5DE3300FF1FA9 /* Celestial.framework in Frameworks */,
+				59CBD76E17E5D7A000FF1FA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59CBD76117E5D7A000FF1FA9 = {
+			isa = PBXGroup;
+			children = (
+				59CBD76F17E5D7A000FF1FA9 /* sirend */,
+				59CBD78E17E622C400FF1FA9 /* Supporting Files */,
+				59CBD76C17E5D7A000FF1FA9 /* Frameworks */,
+				59CBD76B17E5D7A000FF1FA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59CBD76B17E5D7A000FF1FA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD76A17E5D7A000FF1FA9 /* sirend */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59CBD76C17E5D7A000FF1FA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD78617E5DE3300FF1FA9 /* Celestial.framework */,
+				59CBD76D17E5D7A000FF1FA9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59CBD76F17E5D7A000FF1FA9 /* sirend */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD78917E5F15300FF1FA9 /* NSTask.h */,
+				59CBD77917E5D7A000FF1FA9 /* main.m */,
+				59CBD77017E5D7A000FF1FA9 /* Package */,
+				59CBD77417E5D7A000FF1FA9 /* Supporting Files */,
+				59CBD78117E5DA8C00FF1FA9 /* SRDHelper.h */,
+				59CBD78217E5DA8C00FF1FA9 /* SRDHelper.m */,
+				59CBD78B17E61C3E00FF1FA9 /* SRDAlarm.h */,
+				59CBD78C17E61C3E00FF1FA9 /* SRDAlarm.m */,
+			);
+			path = sirend;
+			sourceTree = "<group>";
+		};
+		59CBD77017E5D7A000FF1FA9 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD77117E5D7A000FF1FA9 /* DEBIAN */,
+				59CBD77617E5D7A000FF1FA9 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		59CBD77117E5D7A000FF1FA9 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD77217E5D7A000FF1FA9 /* control.txt */,
+				59CBD77317E5D7A000FF1FA9 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		59CBD77417E5D7A000FF1FA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD77517E5D7A000FF1FA9 /* PackageVersion.plist */,
+				59CBD77B17E5D7A000FF1FA9 /* sirend-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59CBD77617E5D7A000FF1FA9 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD77717E5D7A000FF1FA9 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		59CBD77717E5D7A000FF1FA9 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD77817E5D7A000FF1FA9 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		59CBD78E17E622C400FF1FA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59CBD78F17E622E500FF1FA9 /* com.lbs.sirend.plist */,
+				59CBD79017E622E500FF1FA9 /* reloadsirend */,
+			);
+			name = "Supporting Files";
+			path = "sirend/Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59CBD76917E5D7A000FF1FA9 /* sirend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CBD77E17E5D7A000FF1FA9 /* Build configuration list for PBXNativeTarget "sirend" */;
+			buildPhases = (
+				59CBD76617E5D7A000FF1FA9 /* Sources */,
+				59CBD76717E5D7A000FF1FA9 /* Frameworks */,
+				59CBD76817E5D7A000FF1FA9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sirend;
+			productName = sirend;
+			productReference = 59CBD76A17E5D7A000FF1FA9 /* sirend */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59CBD76217E5D7A000FF1FA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 59CBD76517E5D7A000FF1FA9 /* Build configuration list for PBXProject "sirend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 59CBD76117E5D7A000FF1FA9;
+			productRefGroup = 59CBD76B17E5D7A000FF1FA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59CBD76917E5D7A000FF1FA9 /* sirend */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59CBD76817E5D7A000FF1FA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59CBD76617E5D7A000FF1FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CBD77A17E5D7A000FF1FA9 /* main.m in Sources */,
+				59CBD78317E5DA8C00FF1FA9 /* SRDHelper.m in Sources */,
+				59CBD78D17E61C3E00FF1FA9 /* SRDAlarm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		59CBD77C17E5D7A000FF1FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		59CBD77D17E5D7A000FF1FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		59CBD77F17E5D7A000FF1FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sirend/sirend-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		59CBD78017E5D7A000FF1FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sirend/sirend-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59CBD76517E5D7A000FF1FA9 /* Build configuration list for PBXProject "sirend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CBD77C17E5D7A000FF1FA9 /* Debug */,
+				59CBD77D17E5D7A000FF1FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CBD77E17E5D7A000FF1FA9 /* Build configuration list for PBXNativeTarget "sirend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CBD77F17E5D7A000FF1FA9 /* Debug */,
+				59CBD78017E5D7A000FF1FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59CBD76217E5D7A000FF1FA9 /* Project object */;
+}

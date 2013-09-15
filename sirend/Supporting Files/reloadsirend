@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script reloads the daemon
+
+sleep 5
+launchctl unload /var/mobile/Library/LaunchDaemons/com.lbs.sirend.plist
+
+sleep 2
+launchctl load /var/mobile/Library/LaunchDaemons/com.lbs.sirend.plist

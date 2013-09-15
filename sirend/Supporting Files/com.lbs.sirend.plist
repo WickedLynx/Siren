@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>com.lbs.sirend</string>
+	<key>Program</key>
+	<string>/usr/local/bin/sirend</string>
+	<key>WatchPaths</key>
+	<array>
+		<string>/var/mobile/Library/Preferences/com.apple.mobiletimer.plist</string>
+	</array>
+</dict>
+</plist>
